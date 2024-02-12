@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="G91L89" name="MuxMux" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" companyName="Aidolon"
+              pluginVST3Category="Tools" companyWebsite="www.petermagro.com">
+  <MAINGROUP id="vwm327" name="MuxMux">
+    <GROUP id="{4B65C45C-5CEF-3583-7BD1-84ADF28F9D8E}" name="Source">
+      <GROUP id="{CBBC52DD-3DC9-CC7C-CF89-EDF2C7D9B088}" name="Common">
+        <FILE id="I1ktlB" name="FixedWidthBuffer.cpp" compile="1" resource="0"
+              file="Source/Common/FixedWidthBuffer.cpp"/>
+        <FILE id="RxLn2w" name="FixedWidthBuffer.h" compile="0" resource="0"
+              file="Source/Common/FixedWidthBuffer.h"/>
+      </GROUP>
+      <GROUP id="{677E4054-97F2-5A05-65DE-F176647EFB6E}" name="GUI">
+        <FILE id="K6DyaS" name="BlockButton.h" compile="0" resource="0" file="Source/GUI/BlockButton.h"/>
+        <FILE id="dpmXSj" name="GuiData.h" compile="0" resource="0" file="Source/GUI/GuiData.h"/>
+        <FILE id="hHuFoH" name="OscilloscopeDisplay.cpp" compile="1" resource="0"
+              file="Source/GUI/OscilloscopeDisplay.cpp"/>
+        <FILE id="geqjAd" name="OscilloscopeDisplay.h" compile="0" resource="0"
+              file="Source/GUI/OscilloscopeDisplay.h"/>
+        <FILE id="jk1Ldf" name="WindowLayout.cpp" compile="1" resource="0"
+              file="Source/GUI/WindowLayout.cpp"/>
+        <FILE id="lIIxgL" name="WindowLayout.h" compile="0" resource="0" file="Source/GUI/WindowLayout.h"/>
+      </GROUP>
+      <FILE id="zmnkY3" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="eMbHUg" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="Gw3YJt" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="zYCCal" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MuxMux"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MuxMux"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../sdk/juce-7.0.2-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
